@@ -1,0 +1,33 @@
+.btn {
+    display: flex;
+    width: 280px;
+    height: 64px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: var(--text-color-light);
+    background-color: var(--primary-color-pink);
+
+    &:hover {
+        border-radius: 3px;
+        border: 3px solid #C5358C;
+        background-color: var(--bg-color);
+        color:var(--text-color);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: var(--bg-color);
+        transform: scale(0.98);
+    }
+
+    &:focus {
+        outline: 2px solid var(--text-color);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
